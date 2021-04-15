@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+<title>Radio Multimidias</title>
+<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+	<div class="animation-top">
+        <div class="anim-col colOne">
+            <div class="anim-top">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player id="lottie" src="https://assets8.lottiefiles.com/packages/lf20_y2vuoux2.json"  background="transparent"  speed="1"  style="width: 620px; height: 620px;"  loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+
+	<div class="sidebar">
+		<div class="profile">
+			<img alt="Renan" src="/src/imgs/profile.PNG" width="55px" style="border-radius: 50%;"/>
+			<div class="content-profile">
+				<p style="color: #fff">Renan Santana</p>
+				<button style="border-radius: 3px; border: none; background: linear-gradient(75deg, rgb(135, 206, 4), green); color: #fff; font-size: 13px; height: 30px; margin-top: -10px;">Premium</button>
+			</div>
+		</div>
+		<div class="context">
+			<div class="item">
+				<img class="icon" src="/src/icons/bx_bx-microphone.svg">
+				<small>Podcast</small>
+			</div>
+			<div class="item">
+				<img class="icon" src="/src/icons/Group 5.svg">
+				<small>Músicas</small>
+			</div>
+			<div class="item">
+				<img class="icon" src="/src/icons/eva_radio-outline.svg">
+				<small>Rádio</small>
+			</div>
+			<div class="item">
+				<img class="icon" src="/src/icons/ic_outline-explore.svg">
+				<small>Explore</small>
+			</div>
+			<div class="item">
+				<img class="icon" src="/src/icons/Vector.svg">
+				<small>Eventos</small>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="cta">
+			<div class="cta-one">
+				<h1>Ouça sua música preferida<br>em qualquer lugar</h1>
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player id="lottie" src="https://assets8.lottiefiles.com/temp/lf20_zPWMRz.json"  background="transparent"  speed="1"  style="width: 120px; height: 120px;"  loop autoplay></lottie-player>
+			</div>
+			<p>Faça igual seus amigos, aproveite o melhor da música nacional e internacional, e tudo isso apenas com uma conexão de internet!</p>
+		</div>
+		<div class="areavideo">
+			<div class="bg-video">
+				<video loop autoplay src="/src/video.mp4" id="video"></video>
+			</div>
+		</div>
+	</div>
+
+	<div class="last">
+		<p>Bandas mais ouvidas</p>
+		<div class="list">
+			<div class="banda">
+				<abbr title="Bon Jovi, 1983 - Sayreville, Nova Jersey">
+					<img alt="bj" src="/src/bandas/bon-jovi.jpg" style="border-radius: 50%;" width="70px" height="70px"><br>
+				</abbr>
+				<small><a style="color: #fff" href="/pages/bonjovi.html" >Bon Jovi</a></small>
+			</div>
+			<div class="banda">
+				<abbr title="Queen, 1970 - Londres, Inglaterra">
+					<img alt="queen" src="/src/bandas/queen.png" style="border-radius: 50%;" width="70px" height="70px"><br>
+				</abbr>
+				<small>Queen</small>
+			</div>
+			<div class="banda">
+				<abbr title="Guns and Roses, 1985 - Los Angeles, Califórnia">
+					<img alt="guns" src="/src/bandas/guns.jpg" style="border-radius: 50%;" width="70px" height="70px"><br>
+				</abbr>
+				<small>Guns n Roses</small>
+			</div>
+		</div>
+	</div>
+	<script src="/js/gsap.js"></script>
+</body>
+
+</html>

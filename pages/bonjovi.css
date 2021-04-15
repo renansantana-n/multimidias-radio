@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif !important;
+	max-width: 1920px;
+	background: rgb(18, 18, 20);
+}
+
+section{
+	display: flex;
+	padding-top: 50px;
+	padding-left: 100px;
+	max-height: 100vh !important;
+	overflow-y: hidden !important;
+}
+
+.musics-banda{
+	height: 300px;
+}
+.img-back{
+	width: 100%;
+	position: absolute;
+	top: -120px;
+}
+
+.content-banda{
+	position: fixed;
+	z-index: 99;
+	width: 600px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow-y: auto;
+	margin-right: 100px;
+	right: 0;
+}
+
+.left{
+	min-height: 200px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;	
+	margin-bottom: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(18, 18, 20);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(18, 18, 20);
+}
+::-webkit-scrollbar-thumb {
+    background: #272727;
+}
+
+
+.d-flex-jsb {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	width: 450px;
+}
+
+.one{
+	width: 240px;
+	transform: rotate(-90deg);
+	position: fixed;
+	left: 30px;
+	bottom: 335px;
+}
+
+.two{
+	position: fixed;
+	bottom: 100px;
+	width: 445px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.three{
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.fixed-b {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.center {
+    text-align: center
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.btn span {
+    font-size: 30px;
+}
+
+.btn:hover {
+    color: rebeccapurple;
+}
+
+input.progress {
+    width: 100%;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.5em;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+    outline: none;
+}

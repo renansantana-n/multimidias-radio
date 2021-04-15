@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Radio Multimidias - Bon Jovi</title>
+
+<link rel="stylesheet" type="text/css" href="/pages/bonjovi.css">
+</head>
+<body onload="load()">
+	<section>
+        <div class="musics-banda" style="position: fixed;">
+            <div class="lottie" style="display: flex; align-items: center; justify-content: space-between; width: 300px;">
+                <h1 style="color: #fff; font-size: 60px;">Músicas</h1>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player id="lottie" src="https://assets4.lottiefiles.com/packages/lf20_Sc0OC3.json"  background="transparent"  speed="0.4"  style="width: 50px; height: 50px;"  loop autoplay></lottie-player>
+            </div>
+            <div class="musics-content">
+                <div class="container">
+                    <div class="mt-5"></div>
+                    <div class="mt-5"></div>
+                    <div class="center">
+                     <br><br>
+                        <img id="_img" src="" width="240px" height="240px" style="margin-left: 100px; margin-top: -65px; border-radius: 10px;" />
+                        <h3 id="_title" style="margin-left: 100px; margin-top: 10px; color: #fff;"> </h3>
+                        <h5 id="_artist" style="margin-left: 100px; color: #fffddc"></h5>
+                    </div>
+                    <div class="mt-5"></div>
+                    <div class="d-flex-jsb one">
+                        <span class="material-icons">
+                            <img alt="silence" src="/src/icons/volume-x.svg">
+                        </span>
+                        <input type="range" id="_volume" class="progress" onmouseup="onChangeVolume(event.target.value)" max="100" min="0" value="100">
+                        <span class="material-icons">
+                            <img alt="song" src="/src/icons/volume-2.svg">
+                        </span>
+                    </div>
+                    <div class="fixed-b">
+                        <div class="container">
+                            <div class="d-flex-jsb two">
+                                <p id="_time_act" style="margin-top: 19px; margin-right: 15px;"></p>
+                                <input type="range" id="_progress" class="progress" onmousedown="pause()" onmouseup="onChangeTimeUpdate(event.target.value)" value="0">
+                                <p id="_time_full" style="margin-top: 19px; margin-left: 15px;"></p>
+                            </div>
+                            <div class="mt-2"></div>
+                            <div class="d-flex-jsb three">
+                                <button onclick="previous()" class="btn">
+                                    <img alt="silence" src="/src/icons/arrow-left.svg">
+                                </button>
+                                <button onclick="play()" id="_play" class="btn">
+                                    <img alt="silence" src="/src/icons/play.svg">
+                                </button>
+                                <button onclick="pause()" id="_pause" hidden class="btn">
+                                    <img alt="silence" src="/src/icons/pause.svg">
+                                </button>
+                                <button onclick="next()" class="btn">
+                                    <img alt="silence" src="/src/icons/arrow-right.svg">
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-banda">
+            <div class="right">
+                <h1 style="color: #fff; font-size: 60px;">Bon Jovi</h1>
+                <br>
+                <p style="color: rgb(209, 209, 209); font-size: 18px;">A banda Bon Jovi já vendeu mais de 130 milhões de álbuns em todo o mundo. A banda Bon Jovi ao passar dos anos veio a se tornar uma das bandas mais bem sucedidas da história do rock, quando se trata de turnês pelo mundo, sua marca, músicas em seriados, e aparições em programas de tv, a banda em 2011 foi eleita pela revista Rolling Stone como a segunda banda de rock mais cara do planeta, perdendo o topo posteriormente para a banda irlandesa U2.</p>
+                <br>
+                <p style="color: rgb(209, 209, 209); font-size: 18px;">A banda surgiu em 1983: os integrantes eram Richie Sambora na guitarra, David Bryan Rashbaum nos teclados, Tico Torres na bateria e Alec John Such no baixo. A banda manteve esta formação até 1994, ano em que o baixista Alec J. Such deixou o Bon Jovi. Em seu lugar, assumiu Hugh McDonald. McDonald era um velho conhecido dos membros da banda, tendo inclusive tocado o baixo no hit Runaway, a primeira música de sucesso do Bon Jovi, em meados de 1984, quando passaram a excursionar com Kiss, ZZ Top e Scorpions como banda de abertura, divulgando seu primeiro álbum intitulado Bon Jovi (o nome original era Tough Talk)</p>
+                <br><p style="color: darkgrey;">Conheça um pouco mais sobre a banda clicando <a href="https://pt.wikipedia.org/wiki/Jon_Bon_Jovi" target="_blank">aqui</a></p>
+            </div>
+            <div class="left">
+                <small style="color: rgb(209, 209, 209)" >Logo da banda</small><br>
+                <img alt="logo" src="/src/bandas/bonjovi-logo.png" width="100px" height="120px" style="border-radius: 50%;">
+                <br><br><br>
+                <small style="color: rgb(209, 209, 209)" >Membros da banda</small><br>
+                <div class="list-members">
+                    <img alt="member" src="/src/bandas/bj/jonbonjovi.jfif" width="60px" height="60px" style="border-radius: 50%;">
+                    <img alt="member" src="/src/bandas/bj/richie.jfif.crdownload" width="60px" height="60px" style="border-radius: 50%;">
+                    <img alt="member" src="/src/bandas/bj/Tico-Torres.jpg" width="60px" height="60px" style="border-radius: 50%;">
+                    <img alt="member" src="/src/bandas/bj/images.jfif" width="60px" height="60px" style="border-radius: 50%;">
+                    <br><br>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-musics">
+
+        </div>
+    </section>
+<script src="/js/playerJS.js"></script>
+</body>
+
+</html>
